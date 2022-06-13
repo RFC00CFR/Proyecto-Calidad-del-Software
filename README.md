@@ -1,6 +1,11 @@
 # Proyecto-Calidad-del-Software
-Poryecto desarrollado en el curso Calidad del Software - Grupo 04
+Proyecto desarrollado en el curso Calidad del Software - Grupo 04
+
+Pasos para la instalacion  y configuracion del ambiente de trabajo(Instalacion del IDE, Framework Selenium WebDriver, y configuracion de todo el ambiente):
+
+
 Paso 1: Instalar el JAVA JDK de última versión. 
+
 
 Paso 2: Instalar el IDE a utilizar, en este caso Eclipse. 
 
