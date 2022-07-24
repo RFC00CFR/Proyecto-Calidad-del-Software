@@ -1,81 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-23T18:46:30 CST" name="Suite1" finished-at="2022-07-23T18:46:37 CST" duration-ms="7448">
+  <suite started-at="2022-07-24T00:22:41 CST" name="Suite2" finished-at="2022-07-24T00:22:56 CST" duration-ms="15160">
     <groups>
     </groups>
-    <test started-at="2022-07-23T18:46:30 CST" name="Test1" finished-at="2022-07-23T18:46:37 CST" duration-ms="7448">
-      <class name="com.calidaddelsoftware.project.Test1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.calidaddelsoftware.project.Test1@6b927fb]" started-at="2022-07-23T18:46:30 CST" name="setUp" finished-at="2022-07-23T18:46:30 CST" duration-ms="12" status="PASS">
+    <test started-at="2022-07-24T00:22:41 CST" name="Test2" finished-at="2022-07-24T00:22:56 CST" duration-ms="15160">
+      <class name="com.calidaddelsoftware.project.Test2">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.calidaddelsoftware.project.Test2@4fb61f4a]" started-at="2022-07-24T00:22:41 CST" name="setUp" finished-at="2022-07-24T00:22:41 CST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test2()[pri:0, instance:com.calidaddelsoftware.project.Test1@6b927fb]" started-at="2022-07-23T18:46:30 CST" name="test2" finished-at="2022-07-23T18:46:37 CST" duration-ms="7370" status="PASS">
+        <test-method signature="SearchandEditCustomer()[pri:0, instance:com.calidaddelsoftware.project.Test2@4fb61f4a]" started-at="2022-07-24T00:22:41 CST" name="SearchandEditCustomer" finished-at="2022-07-24T00:22:48 CST" duration-ms="7781" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test1()[pri:0, instance:com.calidaddelsoftware.project.Test1@6b927fb]" started-at="2022-07-23T18:46:30 CST" name="test1" finished-at="2022-07-23T18:46:37 CST" duration-ms="7399" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"body/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[2]/a[1]"}
-  (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HT67QNO', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Lamec\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54138}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41850192fe4e14d808ca73c07bff629a
-*** Element info: {Using=xpath, value=body/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[2]/a[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"body/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[2]/a[1]"}
-  (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HT67QNO', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Lamec\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54138}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41850192fe4e14d808ca73c07bff629a
-*** Element info: {Using=xpath, value=body/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[2]/a[1]}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.calidaddelsoftware.project.Test1.test1(Test1.java:60)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- SearchandEditCustomer -->
+        <test-method signature="CreateCustomer()[pri:0, instance:com.calidaddelsoftware.project.Test2@4fb61f4a]" started-at="2022-07-24T00:22:41 CST" name="CreateCustomer" finished-at="2022-07-24T00:22:56 CST" duration-ms="15131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.calidaddelsoftware.project.Test1@6b927fb]" started-at="2022-07-23T18:46:37 CST" name="tearDown" finished-at="2022-07-23T18:46:37 CST" duration-ms="1" status="PASS">
+        </test-method> <!-- CreateCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.calidaddelsoftware.project.Test2@4fb61f4a]" started-at="2022-07-24T00:22:56 CST" name="tearDown" finished-at="2022-07-24T00:22:56 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.calidaddelsoftware.project.Test1 -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- com.calidaddelsoftware.project.Test2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite2 -->
 </testng-results>
