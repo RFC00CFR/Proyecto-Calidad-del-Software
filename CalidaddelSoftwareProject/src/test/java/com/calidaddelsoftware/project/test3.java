@@ -14,7 +14,7 @@ public class test3 {
 		public void Ptesting1(){
 			//inicializa el driver y da informacion del url
 			String baseUrl = "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F";
-		    System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 	    	WebDriver driver = new ChromeDriver();
 	        driver.get(baseUrl);
 	        
@@ -85,7 +85,7 @@ public class test3 {
 		public void Ptesting2(){
 			//inicializa el driver y da informacion del url
 	    	String baseUrl = "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F";
-		    System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 	    	WebDriver driver = new ChromeDriver();
 	        driver.get(baseUrl);
 
