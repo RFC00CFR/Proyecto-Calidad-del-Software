@@ -25,7 +25,7 @@ public class Test1 {
 	By InputloginLocator= By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button");
 	By InputloginLocator1= By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button");
 	
-	By CatalogLocator= By.xpath("body/div[3]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[2]/a[1]");
+	By CatalogLocator= By.xpath("/html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/a");
 	By ProductLocator= By.xpath("/html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/ul/li[1]/a");
 	
 	By InputusernameLocator= By.xpath("//*[@id=\"load_form\"]/fieldset[6]/input[1]");
@@ -42,13 +42,11 @@ public class Test1 {
 	@Test
 	public void test1() throws Exception {
 		System.out.println("Test 1 run | "+Thread.currentThread().getId());
-		
+		Thread.sleep(7000);
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
-		
-		
 		
 		
 		driver.findElement(PasswordLocator).clear();;
@@ -57,8 +55,7 @@ public class Test1 {
 		driver.findElement(EmailLocator).sendKeys("admin@yourstore.com");
 		driver.findElement(InputloginLocator1).click();
 		
-		driver.findElement(CatalogLocator).click();
-		driver.manage().timeouts().implicitlyWait(5 , TimeUnit.SECONDS);
+		driver.findElement(By.xpath("/html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/a")).click();
 		driver.findElement(ProductLocator).click();
 		driver.findElement(By.xpath("/html/body/div[3]/div[1]/form[1]/div/div/a")).click();
 		
@@ -66,13 +63,11 @@ public class Test1 {
 		driver.findElement(By.xpath("//*[@id=\"ShortDescription\"]")).sendKeys("Computador gaming de alta gama");
 		driver.findElement(By.xpath("//*[@id=\"Sku\"]")).sendKeys("Comp_Fide");
 		
-	
+	    
 		driver.findElement(By.xpath("//*[@id=\"Gtin\"]")).sendKeys("CR");
 		driver.findElement(By.xpath("//*[@id=\"ManufacturerPartNumber\"]")).sendKeys("1");
 		driver.findElement(By.xpath("//*[@id=\"ShowOnHomepage\"]")).click();
 		
-		driver.findElement(By.xpath("//*[@id=\"product-info\"]/div[2]/div[15]/div[2]/div[1]/div[1]/div[1]/div[1]")).click();
-		driver.findElement(By.xpath("//*[@id=\"SelectedStoreIds_listbox\"]/li[2]")).click();
 		
 		driver.findElement(By.xpath("//*[@id=\"AvailableStartDateTimeUtc\"]")).sendKeys("7/26/2022 12:00 AM");
 		driver.findElement(By.xpath("//*[@id=\"AvailableEndDateTimeUtc\"]")).sendKeys("7/31/2022 12:00 AM");
@@ -93,13 +88,18 @@ public class Test1 {
 	@Test
 	public void test2() throws Exception {
 		System.out.println("Test 2 run | "+Thread.currentThread().getId());
-		Thread.sleep(3000);
+		//Thread.sleep(8500);
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
 		driver.findElement(InputloginLocator).click();
-		
+		driver.findElement(By.xpath("//*[@id=\"navbarText\"]/ul/li[3]/a")).click();
+		if(driver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[1]/h1")).isDisplayed()) {
+			System.out.println("Test de Login y Logout Pasados Correctamente"); 
+		}else {
+			System.out.println("Test de Login y Logout Pasados Correctamente");
+		}
 
 	}
 
