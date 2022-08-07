@@ -133,10 +133,9 @@ public class Test1 {
 	}
 
 	
-	
 	 @After
 	 public void tearDown() {
-		// driver.close();
+		 driver.close();
 	 }
 
 }
