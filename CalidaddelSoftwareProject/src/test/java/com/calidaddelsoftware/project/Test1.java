@@ -116,7 +116,11 @@ public class Test1 {
 		String actualTitulo= driver.getTitle();
 		String Titulo= "Your store. Login";
 		assertEquals(actualTitulo, Titulo);
-		driver.findElement(InputloginLocator).click();
+		driver.findElement(PasswordLocator).clear();;
+		driver.findElement(EmailLocator).clear();
+		driver.findElement(PasswordLocator).sendKeys("admin");
+		driver.findElement(EmailLocator).sendKeys("admin@yourstore.com");
+		driver.findElement(InputloginLocator1).click();
 		Thread.sleep(2000);
 		//assert para comprobar que el boton de logout esta habilitado
 		assertTrue(driver.findElement(By.xpath("//*[@id=\"navbarText\"]/ul/li[3]/a")).isEnabled());
@@ -125,7 +129,7 @@ public class Test1 {
 		if(driver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[1]/h1")).isDisplayed()) {
 			//assert para comprobar que se realizo el logout correctamente
 			assertTrue(driver.findElement(Logout).isDisplayed());
-			System.out.println("Test de Login y Logout Pasados Correctamente"); 
+			System.out.println("Test de Login y Logout Pasado Correctamente"); 
 		}else {
 			System.out.println("Test de Login y Logout no pasaron el test Correctamente");
 		}
